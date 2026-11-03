@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vianney | Independent AI Research</title>
+  <meta name="description" content="Independent research on applied AI, enterprise systems, and the architecture of intelligent workflows.">
+  <style>
+    :root {
+      --ink: #1a1f2e;
+      --muted: #5b6275;
+      --accent: #0f766e;
+      --bg: #ffffff;
+      --surface: #f5f7fa;
+      --border: #e3e7ee;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+    header {
+      position: sticky; top: 0; background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid var(--border); z-index: 10;
+    }
+    header .container {
+      display: flex; justify-content: space-between; align-items: center;
+      height: 64px;
+    }
+    .logo { font-weight: 700; text-decoration: none; color: var(--ink); }
+    nav a {
+      color: var(--muted); text-decoration: none; margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero { padding: 6rem 0 5rem; }
+    .eyebrow {
+      color: var(--accent); font-weight: 600; font-size: 0.85rem;
+      letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; margin-bottom: 1.5rem; }
+    .lead { font-size: 1.2rem; color: var(--muted); max-width: 680px; }
+    .btn {
+      display: inline-block; margin-top: 2rem; padding: 0.85rem 1.6rem;
+      background: var(--accent); color: #fff; text-decoration: none;
+      border-radius: 6px; font-weight: 600;
+    }
+    .btn:hover { opacity: 0.9; }
+    section { padding: 4.5rem 0; border-top: 1px solid var(--border); }
+    section.alt { background: var(--surface); }
+    h2 { font-size: 1.9rem; margin-bottom: 1rem; }
+    .section-intro { color: var(--muted); max-width: 680px; margin-bottom: 2.5rem; }
+    .grid {
+      display: grid; gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.75rem;
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 0.6rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .paper { border-left: 4px solid var(--accent); }
+    .paper .meta { font-size: 0.85rem; color: var(--accent); margin-bottom: 0.5rem; font-weight: 600; }
+    .paper a { color: var(--accent); font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+    .paper a:hover { text-decoration: underline; }
+    .about p { max-width: 720px; color: var(--muted); margin-bottom: 1rem; }
+    .stats {
+      display: flex; gap: 3rem; flex-wrap: wrap; margin-top: 2rem;
+    }
+    .stat strong { display: block; font-size: 2rem; color: var(--accent); }
+    .stat span { color: var(--muted); font-size: 0.9rem; }
+    .contact a {
+      font-size: 1.1rem; color: var(--accent); font-weight: 600; text-decoration: none;
+    }
+    footer {
+      border-top: 1px solid var(--border); padding: 2rem 0;
+      color: var(--muted); font-size: 0.85rem; text-align: center;
+    }
+    @media (max-width: 640px) {
+      nav a { margin-left: 1rem; font-size: 0.85rem; }
+      .hero { padding: 4rem 0 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="#top" class="logo">Vianney</a>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#papers">Papers</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="container">
+      <p class="eyebrow">Independent AI Research</p>
+      <h1>Making AI systems that work in the real world, not just in the lab.</h1>
+      <p class="lead">
+        I study how artificial intelligence performs inside complex enterprise environments,
+        where data is messy, processes are interdependent, and reliability matters more than
+        benchmarks. My work turns those lessons into practical frameworks and published research.
+      </p>
+      <a href="#papers" class="btn">Read the research</a>
+    </div>
+  </div>
+
+  <section id="research" class="alt">
+    <div class="container">
+      <h2>Research focus</h2>
+      <p class="section-intro">
+        Current questions I am investigating, and why they matter to organizations deploying AI today.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Agentic workflows</h3>
+          <p>How autonomous AI agents can plan, act, and hand off work safely across enterprise systems.</p>
+        </div>
+        <div class="card">
+          <h3>AI in CRM and service operations</h3>
+          <p>Designing intelligent customer and service processes that measurably improve outcomes.</p>
+        </div>
+        <div class="card">
+          <h3>Reliability and governance</h3>
+          <p>Evaluation methods, guardrails, and oversight models that make AI dependable at scale.</p>
+        </div>
+        <div class="card">
+          <h3>Human-AI collaboration</h3>
+          <p>How people and AI systems share decisions, and where the boundary should sit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="papers">
+    <div class="container">
+      <h2>Selected papers and writing</h2>
+      <p class="section-intro">
+        Preprints, working papers, and articles. Replace these entries with your own titles and links.
+      </p>
+      <div class="grid">
+        <div class="card paper">
+          <p class="meta">2026 · Working paper</p>
+          <h3>[Paper title]</h3>
+          <p>[One or two sentences: the problem, your approach, and the main finding.]</p>
+          <p style="margin-top:1rem;"><a href="#">Read the paper →</a></p>
+        </div>
+        <div class="card paper">
+          <p class="meta">2026 · Article</p>
+          <h3>[Article title]</h3>
+          <p>[One or two sentences summarizing the argument and who should read it.]</p>
+          <p style="margin-top:1rem;"><a href="#">Read the article →</a></p>
+        </div>
+        <div class="card paper">
+          <p class="meta">2025 · Framework</p>
+          <h3>[Framework title]</h3>
+          <p>[One or two sentences describing the framework and where it has been applied.]</p>
+          <p style="margin-top:1rem;"><a href="#">View the framework →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        I am Vianney, a principal-level CRM architect with two decades of experience designing and
+        delivering large-scale enterprise platforms. Through that work I have seen where AI
+        succeeds, where it stalls, and why the gap is usually architectural rather than technical.
+      </p>
+      <p>
+        My independent research bridges that practical experience and academic rigor. I publish
+        openly so that practitioners, researchers, and decision-makers can build on the same evidence.
+      </p>
+      <div class="stats">
+        <div class="stat"><strong>20+</strong><span>Years in enterprise architecture</span></div>
+        <div class="stat"><strong>[#]</strong><span>Published papers</span></div>
+        <div class="stat"><strong>[#]</strong><span>Enterprise deployments informed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Let's connect</h2>
+      <p class="section-intro">
+        Open to research collaboration, peer review, speaking invitations, and conversations about
+        applied AI in enterprise settings.
+      </p>
+      <p class="contact">
+        <a href="mailto:[your-email@example.com]">[your-email@example.com]</a>
+      </p>
+      <p class="contact" style="margin-top:1rem;">
+        <a href="[https://www.linkedin.com/in/your-profile]">LinkedIn</a> &nbsp;·&nbsp;
+        <a href="[https://github.com/your-handle]">GitHub</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Vianney. Views expressed on this site are my own.
+  </div>
+</footer>
+
+</body>
+</html>
